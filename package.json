@@ -1,0 +1,32 @@
+{
+  "name": "react-search-suggestions-input",
+  "version": "0.1.0",
+  "description": "The React Search Suggestions Input is a highly customizable and user-friendly search input component for React applications. Enhance your website or web application's search functionality by providing users with real-time suggestions as they type.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylejamesross/react-search-suggestions-input.git"
+  },
+  "keywords": [
+    "react",
+    "search",
+    "input",
+    "auto",
+    "suggestions",
+    "suggestion",
+    "filter",
+    "component",
+    "javascript",
+    "typescript",
+    "react-component"
+  ],
+  "author": "Kyle Ross",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylejamesross/react-search-suggestions-input/issues"
+  },
+  "homepage": "https://github.com/kylejamesross/react-search-suggestions-input#readme"
+}
