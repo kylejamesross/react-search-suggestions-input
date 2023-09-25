@@ -42,10 +42,17 @@
     "@typescript-eslint/parser": "^6.7.2",
     "@vitejs/plugin-react-swc": "^3.4.0",
     "eslint": "^8.50.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-unicorn": "^48.0.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.3",
     "react-dom": "^18.2.0",
@@ -55,5 +62,21 @@
   },
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2024": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": [
+      "unicorn"
+    ],
+    "rules": {
+      "unicorn/better-regex": "error",
+      "unicorn/…": "error"
+    }
   }
 }
