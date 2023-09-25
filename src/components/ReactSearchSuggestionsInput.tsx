@@ -1,7 +1,4 @@
-import { IReactSearchSuggestionsInput } from '../interfaces/IReactSearchSuggestionsInput';
-
-const ReactSearchSuggestionsInput = ({ hi }: IReactSearchSuggestionsInput) => {
-    console.info(hi);
+const ReactSearchSuggestionsInput = () => {
     return <input type="search" />;
 };
 
