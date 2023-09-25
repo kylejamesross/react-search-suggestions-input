@@ -16,7 +16,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
         with:
           bun-version: 1.0.3
-      - run: bun ci
+      - run: bun install
       - run: bun validate
 
   publish-gpr:
@@ -33,7 +33,7 @@ jobs:
           bun-version: 1.0.3
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: bun ci
+      - run: bun install
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
