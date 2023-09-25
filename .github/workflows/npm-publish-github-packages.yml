@@ -35,6 +35,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
       - run: bun install
       - run: bun run build
-      - run: npm publish --access public
+      - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
