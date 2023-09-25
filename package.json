@@ -2,9 +2,13 @@
   "name": "react-search-suggestions-input",
   "version": "0.1.0",
   "description": "The React Search Suggestions Input is a highly customizable and user-friendly search input component for React applications. Enhance your website or web application's search functionality by providing users with real-time suggestions as they type.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "test": "npm run test"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "check-format": "prettier --check ./src"
   },
   "repository": {
     "type": "git",
@@ -28,5 +32,25 @@
   "bugs": {
     "url": "https://github.com/kylejamesross/react-search-suggestions-input/issues"
   },
-  "homepage": "https://github.com/kylejamesross/react-search-suggestions-input#readme"
+  "homepage": "https://github.com/kylejamesross/react-search-suggestions-input#readme",
+  "devDependencies": {
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "@vitejs/plugin-react-swc": "^3.4.0",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.0.3",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vite-plugin-dts": "^3.5.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  }
 }
