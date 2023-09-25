@@ -1,6 +1,6 @@
 {
   "name": "react-search-suggestions-input",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "The React Search Suggestions Input is a highly customizable and user-friendly search input component for React applications. Enhance your website or web application's search functionality by providing users with real-time suggestions as they type.",
   "main": "dist/index.js",
   "type": "module",
