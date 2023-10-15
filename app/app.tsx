@@ -1,11 +1,11 @@
 
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { ReactSearchSuggestionsInput } from "../src/index";
+import { Content } from "./content";
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
-    <ReactSearchSuggestionsInput />
+    <Content />
   </React.StrictMode>
 );
