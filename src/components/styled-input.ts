@@ -39,8 +39,4 @@ export const StyledInput = styled.input`
         outline-offset: 2px;
         outline-color: rgba(31, 41, 55, 0.2);
     }
-    &:focus-within + div {
-        opacity: 1;
-        visibility: visible;
-    }
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledReactSearchSuggtionsPostIconWrapper = styled.div`
+export const StyledRightIcon = styled.div`
     width: 3rem;
     height: 3rem;
     position: absolute;

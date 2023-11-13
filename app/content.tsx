@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { ReactSearchSuggestionsInput } from "../src/components/react-search-suggestions-input";
 import { Suggestion } from "../src/interfaces/suggestion";
 
 export const Content = () => {
   const [searchValue, setSearchValue] = useState('');
+  const onClear = useCallback(() => setSearchValue(''), [])
   const [suggestions] = useState<Suggestion[]>([
   { id: '6ba7b810-9dad-11d1-80b4-00c04fd430c8' },
   { id: '6ba7b811-9dad-11d1-80b4-00c04fd430c8' },
@@ -28,7 +29,7 @@ export const Content = () => {
 ])
   return (
     <div style={{ width: '250px'}}>
-      <ReactSearchSuggestionsInput value={searchValue} onChange={setSearchValue} aria-label="hii" suggestions={suggestions} />
+      <ReactSearchSuggestionsInput value={searchValue} onChange={setSearchValue} aria-label="hii" suggestions={suggestions} onClear={onClear} />
     </div>
   )
 }

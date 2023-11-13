@@ -4,6 +4,7 @@ import { Suggestion } from './suggestion';
 export interface ReactSearchSuggestionsProperties<T extends Suggestion> {
     id?: string | undefined;
     onChange: (value: string, event: ChangeEvent<HTMLInputElement>) => void;
+    onClear: () => void;
     value: string;
     placeholder?: string | undefined;
     disabled?: boolean | undefined;

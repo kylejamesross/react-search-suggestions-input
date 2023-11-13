@@ -4,7 +4,7 @@ import { StyledSuggestions } from './styled-suggestions';
 import { SuggestionComponent } from './suggestion-component';
 
 export const SuggestionsComponent = <T extends Suggestion>({ suggestions }: SuggestionsComponentProperties<T>) => (
-    <StyledSuggestions>
+    <StyledSuggestions className="react-search-suggestions-component">
         <>
             {suggestions.map((suggestion) => (
                 <SuggestionComponent suggestion={suggestion} key={suggestion.id} />
