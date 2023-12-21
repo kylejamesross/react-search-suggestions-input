@@ -1,1 +1,1 @@
-export { ReactSearchSuggestionsInput } from './components/react-search-suggestions-input';
+export { ReactSearchSuggestionsInput } from './components/search/react-search-suggestions-input';

@@ -1,6 +1,6 @@
-import { Suggestion } from '../interfaces/suggestion';
-import { SuggestionsComponentProperties } from '../interfaces/suggestions-component-properties';
-import { StyledSuggestions } from './styled-suggestions';
+import { Suggestion } from '../../../interfaces/search/suggestions/suggestion';
+import { SuggestionsComponentProperties } from '../../../interfaces/search/suggestions/suggestions-component-properties';
+import { StyledSuggestions } from './styled/styled-suggestions';
 import { SuggestionComponent } from './suggestion-component';
 
 export const SuggestionsComponent = <T extends Suggestion>({ suggestions }: SuggestionsComponentProperties<T>) => (

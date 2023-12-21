@@ -1,6 +1,6 @@
 import { useCallback } from 'react';
-import { ClearIconProperties } from '../interfaces/clear-icon-properties';
-import { Button } from './button';
+import { ClearIconProperties } from '../../interfaces/icons/clear-icon-properties';
+import { Button } from '../base/button';
 
 export const ClearIcon = ({ onClear }: ClearIconProperties) => {
     const onChange = useCallback(() => onClear(), [onClear]);

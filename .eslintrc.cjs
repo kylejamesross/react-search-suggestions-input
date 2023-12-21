@@ -5,17 +5,7 @@ module.exports = {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:import/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:eslint-comments/recommended',
-    'plugin:unicorn/recommended',
-    'plugin:security/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:import/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:eslint-comments/recommended', 'plugin:unicorn/recommended', 'plugin:security/recommended', 'plugin:jsx-a11y/recommended', 'plugin:react-hooks/recommended', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],

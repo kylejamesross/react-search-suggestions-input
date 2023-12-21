@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { Suggestion } from './suggestion';
+import { Suggestion } from './suggestions/suggestion';
 
 export interface ReactSearchSuggestionsProperties<T extends Suggestion> {
     id?: string | undefined;

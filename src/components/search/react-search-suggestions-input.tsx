@@ -1,11 +1,11 @@
 import { ChangeEvent, ChangeEventHandler, useCallback } from 'react';
-import { ReactSearchSuggestionsProperties } from '../interfaces/react-search-suggestions-properties';
-import { StyledInput } from './styled-input';
+import { ReactSearchSuggestionsProperties } from '../../interfaces/search/react-search-suggestions-properties';
+import { Suggestion } from '../../interfaces/search/suggestions/suggestion';
+import { StyledInput } from '../base/styled-input';
+import { LeftIcon } from '../icons/left-icon';
+import { RightIcon } from '../icons/right-icon';
 import { StyledReactSearchSuggestionsInput } from './styled-react-search-suggestions-input';
-import { SuggestionsComponent } from './suggestions-component';
-import { Suggestion } from '../interfaces/suggestion';
-import { RightIcon } from './right-icon';
-import { LeftIcon } from './left-icon';
+import { SuggestionsComponent } from './suggestions/suggestions-component';
 
 const ReactSearchSuggestionsInput = <T extends Suggestion>({
     id = 'react-search-suggestions-input',
