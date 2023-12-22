@@ -1,9 +1,10 @@
-import { ChangeEvent } from 'react';
+import { ChangeEvent, ReactNode } from 'react';
 import { Suggestion } from './suggestions/suggestion';
 
 export interface ReactSearchSuggestionsProperties<T extends Suggestion> {
     id?: string | undefined;
     onChange: (value: string, event: ChangeEvent<HTMLInputElement>) => void;
+    onRenderSuggestion: (suggestion: T) => ReactNode;
     onClear: () => void;
     value: string;
     placeholder?: string | undefined;

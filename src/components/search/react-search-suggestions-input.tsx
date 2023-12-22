@@ -12,6 +12,7 @@ const ReactSearchSuggestionsInput = <T extends Suggestion>({
     onChange: onChangeFromProperties,
     onClear,
     suggestions = [],
+    onRenderSuggestion,
     ...properties
 }: ReactSearchSuggestionsProperties<T>) => {
     const { value } = properties;
@@ -26,7 +27,7 @@ const ReactSearchSuggestionsInput = <T extends Suggestion>({
             <LeftIcon />
             <StyledInput type="text" role="searchbox" id={id} onChange={onChange} {...properties} />
             <RightIcon value={value} onClear={onClear} />
-            <SuggestionsComponent suggestions={suggestions} />
+            <SuggestionsComponent suggestions={suggestions} onRenderSuggestion={onRenderSuggestion} />
         </StyledReactSearchSuggestionsInput>
     );
 };

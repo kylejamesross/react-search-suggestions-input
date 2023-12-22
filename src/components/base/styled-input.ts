@@ -25,7 +25,6 @@ export const StyledInput = styled.input`
     padding: 1rem 3rem;
     height: 3rem;
     width: 100%;
-    border-radius: 0.5rem;
     color: rgb(31, 41, 55);
     border-color: rgba(31, 41, 55, 0.2);
     border-style: solid;

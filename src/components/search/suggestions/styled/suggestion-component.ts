@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { blankButton } from '../../../../base/styled/blank-button';
 
-export const StyledSuggestion = styled.button`
+export const SuggestionComponent = styled.button`
     ${blankButton}
-    padding: 1rem;
+    padding: 0.25rem;
     background-color: #fff;
     border-color: rgba(31, 41, 55, 0.2);
     border-width: 1px;
