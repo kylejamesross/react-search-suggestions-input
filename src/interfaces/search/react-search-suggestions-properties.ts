@@ -1,5 +1,6 @@
 import { ChangeEvent, ReactNode } from 'react';
 import { Suggestion } from './suggestions/suggestion';
+import { ReactSearchSuggestionsStyles } from './react-search-suggestions-styles';
 
 export interface ReactSearchSuggestionsProperties<T extends Suggestion> {
     id?: string | undefined;
@@ -15,4 +16,5 @@ export interface ReactSearchSuggestionsProperties<T extends Suggestion> {
     minLength?: number | undefined;
     maxLength?: number | undefined;
     suggestions?: T[];
+    styles?: ReactSearchSuggestionsStyles;
 }
